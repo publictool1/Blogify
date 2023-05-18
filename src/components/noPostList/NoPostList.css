@@ -1,0 +1,13 @@
+.error__container p {
+    color: red;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.error__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+}

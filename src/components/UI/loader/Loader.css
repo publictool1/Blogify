@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* margin-top: 50px; */
+}
+
+.loader {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px dashed blueviolet;
+    animation: rotate 1s infinite linear;
+        margin-top: 50px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg) scale(1);
+    } to {
+        transform: rotate(360deg) scale(1.4);
+    }
+}

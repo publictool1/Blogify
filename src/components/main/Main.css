@@ -1,0 +1,133 @@
+.container {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.content {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  justify-content: space-between;
+  width: 80%;
+  border-bottom: 1px solid black;
+}
+
+.main__content {
+  width: 100%;
+}
+
+.add__container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.text__contant {
+  padding: 50px;
+}
+
+.button__contant {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.button__container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.text__contant h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text__contant p {
+  font-size: 16px;
+}
+
+.button__content {
+  padding-left: 20px;
+}
+
+.liked {
+  color: #e53935;
+  cursor: pointer;
+}
+
+.unlike {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+
+.like-count {
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.like-count.show {
+  opacity: 1;
+}
+
+
+.content:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+  border-bottom: none;
+}
+
+/* .content:hover .button__contant button:first-child {
+  background-color: red;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+} */
+
+
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.liked svg {
+  animation: heartBeat 0.5s infinite;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  background-color: #e9e9e9;
+  border: none;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #d1d1d1;
+}
+
+.pagination button:focus {
+  outline: none;
+}
+
+.pagination button.active {
+  background-color: #8f8f8f;
+}
